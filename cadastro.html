@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="./src/assets/styles/cadastro.css">
   <script src="https://kit.fontawesome.com/8957e9a71b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <nav class="menu">
     <div class="left">
@@ -26,25 +28,25 @@
       <a href="./login.html"><button class="entrar" id="entrar">Entrar</button></a>
     </div>
   </nav>
-  
-  
+
+
   <div class="content">
     <section class="area-imagem">
       <img src="./src/assets/images/heroi-propose.svg" alt="Propose">
     </section>
 
     <section class="area-cadastro">
-      <form action="" class="cadastro">
-        <input type="text" placeholder="nome completo">
-        <input type="email" placeholder="e-mail: exemplo@exemplo.com">
-        <input type="password" placeholder="senha:">
-        <input type="password" placeholder="repita a senha">
+      <form onsubmit=" return cadastrarUsuario()" action="" class="cadastro">
+        <input type="text" placeholder="nome completo" class="nome">
+        <input type="email" placeholder="e-mail: exemplo@exemplo.com" class="email">
+        <input type="password" placeholder="senha:" class="senha">
+        <input type="password" placeholder="repita a senha" class="repete-senha">
 
         <div class="inputs-radio">
-          <input type="radio" name="tipo-cadastro" id="radio-aluno">
-          <label for="radio-aluno">Aluno</label>
-          <input type="radio" name="tipo-cadastro" id="radio-mentor">
-          <label for="radio-mentor">Mentor</label>
+          <input type="radio" name="tipo-cadastro" id="radio-candidato">
+          <label for="radio-candidato">Candidato</label>
+          <input type="radio" name="tipo-cadastro" id="radio-profissional">
+          <label for="radio-profissional">Profissional</label>
         </div>
 
         <button type="submit" id="cadastrar">Cadastrar</button>
@@ -54,5 +56,7 @@
   </div>
 
   <script src="./src/libs/menu.js"></script>
+  <script src="./src/libs/cadastro.js"></script>
 </body>
+
 </html>

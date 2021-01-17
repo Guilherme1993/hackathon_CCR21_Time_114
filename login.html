@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="./src/assets/styles/login.css">
   <script src="https://kit.fontawesome.com/8957e9a71b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <nav class="menu">
     <div class="left">
@@ -17,8 +19,12 @@
       <input type="checkbox" id="button-submenu" style="display: none;">
       <div class="submenu hide">
         <ul>
-          <a href="./index.html"><li>Inicio</li></a>
-          <a href="./sobre.html"><li>Sobre nós</li></a>
+          <a href="./index.html">
+            <li>Inicio</li>
+          </a>
+          <a href="./sobre.html">
+            <li>Sobre nós</li>
+          </a>
         </ul>
       </div>
     </div>
@@ -30,9 +36,9 @@
 
     <section class="area-login">
       <form action="" class="login">
-        <input type="email" placeholder="e-mail: exemplo@exemplo.com">
-        <input type="password" placeholder="senha:">
-        <button type="submit" id="entrar">Entrar</button>
+        <input type="email" placeholder="e-mail: exemplo@exemplo.com" class="email">
+        <input type="password" placeholder="senha:" class="senha">
+        <button type="button" onclick="acessar()" id="entrar">Entrar</button>
         <a href="./cadastro.html"><button type="button" id="cadastrar">Cadastrar</button></a>
         <a href="./recuperacao.html" id="esqueceu-senha">Esqueceu a senha?</a>
       </form>
@@ -41,4 +47,5 @@
   <script src="./src/libs/menu.js"></script>
   <script src="./src/libs/login.js"></script>
 </body>
+
 </html>
