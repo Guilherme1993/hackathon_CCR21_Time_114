@@ -1,6 +1,6 @@
 .box-teste-vocacional {
   background-color: var(--bege-secundario);
-  background-image: url('../images/heroi-propose.svg');
+  background-image: url('../../images/heroi-propose.svg');
   background-repeat: no-repeat;
   background-size: 50%;
   background-position-y: bottom;
@@ -20,7 +20,7 @@
 
 .conteudo {
   height: 100%;
-  width: 60%;
+  width: 65%;
   padding: 24px;
   padding-right: 0;
   display: flex;
@@ -30,6 +30,7 @@
 
 .conteudo h1 {
   color: var(--azul-secudario);
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 28px;
 }
