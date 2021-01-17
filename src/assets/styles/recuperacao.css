@@ -39,8 +39,8 @@
 }
 
 #recuperacao {
-  background-color: var(--azul-primario);
-  color: var(--azul-secudario);
+  background-color: var(--azul-secudario);
+  color: var(--bege-primario);
   font-size: 1.4rem;
 
   width: 156px;
@@ -48,4 +48,9 @@
   margin: 8px 0;
   border-radius: 16px;
   border: none;
+}
+
+#voltar {
+  color: var(--azul-secudario);
+  font-size: .9rem;
 }
