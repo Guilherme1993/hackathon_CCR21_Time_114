@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --azul-primario: #91d7f2;
+  --azul-secudario: #022e40;
+  --laranja-primario: #f2955e;
+  --laranja-secudario: #d93b3b;
+  --bege-primario: #f2f0eb;
+  --bege-secundario: #fcfcfc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu {
+  background-color: var(--azul-secudario);
+
+  width: 100vw;
+  height: 44px;
+  padding: 4px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+}
+
+.menu > .right {
+  width: 156px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu .fa-bars {
+  color: var(--bege-secundario);
+}
+
+.menu > .left {
+  width: 70px;
+  display: flex;
+  justify-content: flex-start;
+
+  position: relative;
+}
+
+.submenu {
+  background-color: var(--laranja-primario);
+  
+  width: 220px;
+  padding: 16px;
+  border-bottom-right-radius: 16px;;
+  
+  position: absolute;
+  top: 31px;
+  left: -16px;
+
+  transition: .3s ease-in-out;
+}
+/* 
+.submenu::before {
+  content: url('../images/seta-menu.svg');
+  width: 20px;
+  height: 10px;
+  
+  position: absolute;
+  top: -10px;
+  left: 0;
+} */
+
+.submenu > ul {
+  color: var(--bege-secundario);
+  flex-direction: column;
+}
+
+.submenu > ul li {
+  color: var(--bege-secundario);
+  display: flex;
+  margin: 8px 0;
+}
+
+.entrar {
+  background-color: var(--bege-primario);
+  width: 70px;
+
+  color: var(--azul-secudario);
+  padding: 4px 8px;
+
+  border-radius: 16px;
+  border: none;
+}
+
+.entrar:focus {
+  outline: none;
+}
+
+.content {
+  background-color: var(--bege-primario);
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: 44px;
+}
+
+.hide {
+  display: none;
+}
