@@ -53,3 +53,76 @@
   height: 36px;
   border-radius: 8px;
 }
+
+.agendamento-devolutiva {
+  background-color: var(--bege-secundario);
+  background-image: url('../../images/background.svg');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position-y: -30%;
+  background-position-x: 230%;
+
+  
+  width: 328px;
+  max-height: 160px;
+  padding: 16px;
+  
+  border-radius: 16px;
+  margin-bottom: 16px;
+
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 70% 30%;
+}
+
+.info-agendamento {
+  width: 100%;
+}
+
+.info-agendamento h1{
+  font-size: 1.3rem;
+}
+
+.info-agendamento p{
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.data-agendamento {
+  padding: 0 8px;
+}
+
+.data-agendamento h3{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.data-agendamento span{
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+.perfil-profissional {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.perfil-profissional img {
+  height: 100%;
+}
+
+.perfil-profissional .contato-profissional {
+  margin-left: 12px;
+}
+
+.perfil-profissional .contato-profissional h1{
+  font-size: 1rem;
+}
+.perfil-profissional .contato-profissional span{
+  font-size: .7rem;
+  font-weight: 300;
+}

@@ -2,9 +2,9 @@
 
 :root {
   --azul-primario: #91d7f2;
-  --azul-secudario: #022e40;
+  --azul-secundario: #022e40;
   --laranja-primario: #f2955e;
-  --laranja-secudario: #d93b3b;
+  --laranja-secundario: #d93b3b;
   --bege-primario: #f2f0eb;
   --bege-secundario: #fcfcfc;
 }
@@ -20,7 +20,7 @@
 }
 
 .menu {
-  background-color: var(--azul-secudario);
+  background-color: var(--azul-secundario);
 
   width: 100vw;
   height: 44px;
@@ -96,7 +96,7 @@
   background-color: var(--bege-primario);
   width: 70px;
 
-  color: var(--azul-secudario);
+  color: var(--azul-secundario);
   padding: 4px 8px;
 
   border-radius: 16px;
