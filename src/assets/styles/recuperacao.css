@@ -1,0 +1,51 @@
+.area-imagem {
+  width: 100vw;
+  min-height: 25vh;
+  max-height: 200px;
+}
+
+.area-imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.area-recuperacao {
+  width: 100vw;
+  max-height: 50vh;
+  padding: 0 16px;
+}
+
+.recuperacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recuperacao > input {
+  background-color: var(--bege-secundario);
+  color: var(--azul-secudario);
+  font-weight: 600;
+
+  width: 100%;
+  height: 44px;
+  
+  border: 2px solid var(--azul-secudario);
+  border-radius: 16px;
+  margin: 8px 0;
+  text-indent: 8pt;
+
+  outline: none;
+}
+
+#recuperacao {
+  background-color: var(--azul-primario);
+  color: var(--azul-secudario);
+  font-size: 1.4rem;
+
+  width: 156px;
+  height: 36px;
+  margin: 8px 0;
+  border-radius: 16px;
+  border: none;
+}
