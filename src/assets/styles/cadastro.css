@@ -1,7 +1,7 @@
 .area-imagem {
   width: 100vw;
-  min-height: 35vh;
-  max-height: 300px;
+  min-height: 25vh;
+  max-height: 200px;
 }
 
 .area-imagem img {
@@ -9,20 +9,20 @@
   height: 100%;
 }
 
-.area-login {
+.area-cadastro {
   width: 100vw;
   max-height: 50vh;
   padding: 0 16px;
 }
 
-.login {
+.cadastro {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.login > input {
+.cadastro > input {
   background-color: var(--bege-secundario);
   color: var(--azul-secudario);
   font-weight: 600;
@@ -38,8 +38,12 @@
   outline: none;
 }
 
-#entrar {
-  background-color: var(--azul-secudario);
+.inputs-radio {
+  margin: 8px 0;
+}
+
+#cadastrar {
+  background-color: var(--laranja-primario);
   color: var(--bege-primario);
   font-size: 1.4rem;
 
@@ -50,19 +54,7 @@
   border: none;
 }
 
-#cadastrar {
-  background-color: var(--laranja-primario);
-  color: var(--bege-primario);
-  font-size: .95rem;
-
-  width: 92px;
-  height: 24px;
-  margin: 8px 0;
-  border-radius: 16px;
-  border: none;
-}
-
-#esqueceu-senha {
+#sou-membro {
   color: var(--azul-secudario);
   font-size: .9rem;
 }
