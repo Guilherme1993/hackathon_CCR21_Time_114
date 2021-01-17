@@ -16,14 +16,15 @@ function acessar() {
       if (usuario[0].senha === inputSenha.value) {
         localStorage.setItem('usuarioLogado', JSON.stringify(usuario[0]));
         const redirecionamento = {
-          // 0: window.location.href = 'http://127.0.0.1:5500/candidato/index.html',
-          // 1: window.location.href = 'http://127.0.0.1:5500/profissional/index.html',
-          // 2: window.location.href = 'http://127.0.0.1:5500/admin/index.html',
-          0: window.location.href = 'file:///C:/Users/guisk/Documents/ADS%20-%20Fatec/hackathon_ccr/hackathon_CCR21_Time_114/hackathon_CCR21_Time_114/candidato/index.html',
-          1: window.location.href = 'file:///C:/Users/guisk/Documents/ADS%20-%20Fatec/hackathon_ccr/hackathon_CCR21_Time_114/hackathon_CCR21_Time_114/profissional/index.html',
-          2: window.location.href = 'file:///C:/Users/guisk/Documents/ADS%20-%20Fatec/hackathon_ccr/hackathon_CCR21_Time_114/hackathon_CCR21_Time_114/admin/index.html',
+          '0': 'http://127.0.0.1:5500/candidato/index.html',
+          '1': 'http://127.0.0.1:5500/profissional/index.html',
+          '2': 'http://127.0.0.1:5500/admin/index.html',
+          // 0: window.location.href = 'file:///C:/Users/guisk/Documents/ADS%20-%20Fatec/hackathon_ccr/hackathon_CCR21_Time_114/hackathon_CCR21_Time_114/candidato/index.html',
+          // 1: window.location.href = 'file:///C:/Users/guisk/Documents/ADS%20-%20Fatec/hackathon_ccr/hackathon_CCR21_Time_114/hackathon_CCR21_Time_114/profissional/index.html',
+          // 2: window.location.href = 'file:///C:/Users/guisk/Documents/ADS%20-%20Fatec/hackathon_ccr/hackathon_CCR21_Time_114/hackathon_CCR21_Time_114/admin/index.html',
         }
-        redirecionamento[usuario[0].tipo]
+        window.location.href = redirecionamento[usuario[0].tipo]
+        // redirecionamento[]
 
       } else {
         alert('Senha inválida!')
