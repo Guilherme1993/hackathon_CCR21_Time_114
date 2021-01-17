@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro</title>
   <link rel="stylesheet" href="./src/assets/styles/global.css">
+  <link rel="stylesheet" href="./src/assets/styles/cadastro.css">
   <script src="https://kit.fontawesome.com/8957e9a71b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -25,15 +26,29 @@
       <a href="./login.html"><button class="entrar" id="entrar">Entrar</button></a>
     </div>
   </nav>
+  
+  
   <div class="content">
-    <section class="area-login">
-      <form action="" class="login">
+    <section class="area-imagem">
+      <img src="./src/assets/images/heroi-propose.svg" alt="Propose">
+    </section>
+
+    <section class="area-cadastro">
+      <form action="" class="cadastro">
         <input type="text" placeholder="nome completo">
         <input type="text" placeholder="e-mail: exemplo@exemplo.com">
         <input type="password" placeholder="senha:">
         <input type="password" placeholder="repita a senha">
-        <button type="submit" value="Registrar">Registrar</button>
-        <a href="./recuperacao.html">Esqueceu a senha?</a>
+
+        <div class="inputs-radio">
+          <input type="radio" name="tipo-cadastro" id="radio-aluno">
+          <label for="radio-aluno">Aluno</label>
+          <input type="radio" name="tipo-cadastro" id="radio-mentor">
+          <label for="radio-mentor">Mentor</label>
+        </div>
+
+        <button type="submit" id="cadastrar">Cadastrar</button>
+        <a href="./login.html" id="sou-membro">Eu já sou um membro!</a>
       </form>
     </section>
   </div>
