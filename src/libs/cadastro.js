@@ -15,9 +15,11 @@ function cadastrarUsuario() {
         if (validar()) {
 
             let tipo = 0;
+            let acesso = true;
 
             if (radioProfissional.checked) {
                 tipo = 1;
+                acesso = false;
             }
 
             let candidato = {
@@ -25,13 +27,23 @@ function cadastrarUsuario() {
                 email: inputEmail.value,
                 senha: inputSenha.value,
                 tipo: tipo,
-                mentoria: 0
+                mentoria: 0,
+                acesso: acesso
             }
 
             let arr = [];
 
             if (arrayUsu != null && arrayUsu.length > 0) {
                 arr = JSON.parse(localStorage.getItem("usuarios"))
+            } else {
+                arr.push({
+                    nome: 'admin',
+                    email: 'admin@admin.com.br',
+                    senha: 'admin',
+                    tipo: 2,
+                    mentoria: 0,
+                    acesso: true
+                });
             }
             arr.push(candidato);
             localStorage.setItem("usuarios", JSON.stringify(arr));

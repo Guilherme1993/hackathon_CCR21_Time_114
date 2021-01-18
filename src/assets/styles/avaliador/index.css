@@ -1,0 +1,157 @@
+.content {
+  background-image: url('../../images/heroi-propose.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  background-position-x: 150px;
+
+  padding: 44px 16px;
+  justify-content: start;
+
+  position: relative;
+}
+
+.content > h1 {
+  margin: 40px 0;
+}
+
+.agendamentos {
+  width: 100%;
+  height: 400px;
+
+  overflow-y: auto;
+}
+
+.card-agendamento {
+  background-color: var(--bege-secundario);
+  width: 95%;
+  max-width: 100%;
+  max-height: 92px;
+  border-radius: 16px;
+  display: flex;
+  margin: 8px;
+
+  padding: 8px;
+}
+
+.perfil-candidato {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.perfil-candidato img{
+  width: 72px;
+}
+
+.perfil-candidato .info-candidato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-left: 8px;
+}
+
+.email-candidato {
+  font-size: .8rem;
+}
+
+.perfil-candidato .info-candidato h1{
+  font-size: 1.24rem;
+}
+
+.perfil-candidato .data-agendamento {
+  display: flex;
+  align-items: center;
+}
+
+.data-agendamento > *{
+  margin: 4px 4px;
+  font-size: 1rem;
+}
+
+.add-agendamento {
+  background-color: var(--laranja-secundario);
+  width: 44px;
+  height: 44px;
+  margin: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.fa-plus {
+  color: var(--bege-secundario);
+}
+
+.modal-agendamento {
+  background-color: rgba(0, 0, 0, .5);
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.conteudo {
+  background-color: var(--bege-secundario);
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  padding: 32px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.fa-times {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.conteudo .input-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo input, .conteudo select {
+  width: 100%;
+  height: 32px;
+  box-sizing: content-box;
+
+  margin: 8px;
+  padding: 8px;
+
+  /* box-shadow: 3px 3px 6px rgba(0, 0, 0, .3); */
+  border-radius: 12px;
+  border: 2px solid var(--azul-secundario);
+  outline: none;
+}
+
+.conteudo button {
+  background-color: var(--azul-secundario);
+  color: var(--bege-secundario);
+  font-size: .8rem;
+  font-weight: bold;
+  line-height: 16px;
+
+  border: none;
+  width: 120px;
+  height: 36px;
+  border-radius: 8px;
+  outline: none;
+}

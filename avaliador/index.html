@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../src/assets/styles/global.css">
+  <link rel="stylesheet" href="../src/assets/styles/avaliador/index.css">
+  <script src="https://kit.fontawesome.com/8957e9a71b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="menu">
+    <div class="left">
+      <label for="button-submenu">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="button-submenu" style="display: none;">
+      <div class="submenu hide">
+        <ul>
+          <a href="./index.html"><li>Início</li></a>
+          <a href="./teste.html"><li>Teste vocacional</li></a>
+          <a href="./perfil.html"><li>Perfil</li></a>
+          <a href="../login.html"><li>sair</li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <a href="./perfil.html">
+        <div class="info">
+          <strong class="nome-usuario">Felipe Goulart</strong>
+          <span class="tipo-usuario">Candidato</span>
+        </div>
+        <div class="img-perfil">
+          <img src="../src/assets/images/perfil-icon-candidato.svg" class="foto">
+        </div>
+      </a>
+    </div>
+  </nav>
+  <div class="content">
+    <h1>Agendamentos</h1>
+    <div class="agendamentos">
+      <div class="card-agendamento">
+        <div class="perfil-candidato">
+          <img src="../src/assets/images/perfil-icon-profissional.svg" alt="Carlos Roland">
+
+          <div class="info-candidato">
+            <h1 class="titulo-agendamento">Felipe Goulart</h1>
+            <span class="email-candidato">carlos.roland@propose.com.br</span>
+            
+            <div class="data-agendamento">
+              <i class="far fa-calendar-minus"></i>
+              <h3 class="data">18/01/21</h3>
+              <span class="hora">09h10min</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    <span class="add-agendamento">
+      <i class="fas fa-plus "></i>
+    </span>
+    
+      <div class="modal-agendamento hide">
+        <div class="conteudo">
+          <i class="fas fa-times fechar-modal"></i>
+          <div class="input-data">
+            <input type="date" name="data" id="data">
+            <input type="time" name="hora" id="hora">
+          </div>
+          <select name="candidatos" id="candidatos">
+          </select>
+          <button onclick="agendar()" id="agendar">Agendar</button>
+        </div>
+      </div>
+  </div>
+
+  <script>
+    const addAgendamento = document.querySelector('.add-agendamento')
+    const fecharModal = document.querySelector('.fechar-modal')
+    const modal = document.querySelector('.modal-agendamento')
+
+    addAgendamento.addEventListener('click', () => {
+      modal.classList.remove('hide')
+    })
+
+    fecharModal.addEventListener('click', () => {
+      modal.classList.add('hide')
+    })
+  </script>
+  <script src="../src/libs/menu.js"></script>
+  <script src="../src/libs/avaliador.js"></script>
+</body>
+</html>

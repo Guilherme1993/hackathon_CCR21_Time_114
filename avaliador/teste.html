@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio</title>
   <link rel="stylesheet" href="../src/assets/styles/global.css">
-  <link rel="stylesheet" href="../src/assets/styles/candidato/index.css">
+  <link rel="stylesheet" href="../src/assets/styles/candidato/teste.css">
   <script src="https://kit.fontawesome.com/8957e9a71b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -27,8 +27,8 @@
     <div class="right">
       <a href="./perfil.html">
         <div class="info">
-          <strong class="nome-usuario"></strong>
-          <span class="tipo-usuario"></span>
+          <strong class="nome-usuario">Felipe Goulart</strong>
+          <span class="tipo-usuario">Candidato</span>
         </div>
         <div class="img-perfil">
           <img src="../src/assets/images/perfil-icon-candidato.svg" class="foto">
@@ -37,35 +37,29 @@
     </div>
   </nav>
   <div class="content">
-    <div class="agendamento-devolutiva">
-      <div class="info-agendamento">
-        <h1 class="titulo-agendamento">Orientação Agendada: </h1>
-        <p>Em caso de indisponibilidade de horário envie e-mail para o responsável.</p>
-      </div>
-
-      <div class="data-agendamento">
-        <h3 class="data">18/01/21</h3>
-        <span class="hora">09h10min</span>
-      </div>
-
-      <div class="perfil-profissional">
-        <img src="../src/assets/images/perfil-icon-profissional.svg" alt="Carlos Roland">
-        <div class="contato-profissional">
-          <h1 class="avaliador">Carlos Roland</h1>
-          <span class="email">carlos.roland@propose.com.br</span>
-        </div>
-      </div>
+    <div class="box-teste-vocacional">
+      <h1>Entraremos em contato para agendar a Devolutiva do Teste Vocacional</h1>
+      <p>Para realizar o teste acesse a sala JCMSJFQ <br>
+        <button type="button" class="clique">clique aqui para copiar</button>
+      </p>
+      <a href="https://b.socrative.com/login/student/" target="blank">
+        <button>Ir para o Teste</button>
+      </a>
     </div>
 
-    <div class="box-teste-vocacional realizado">
-      <div class="conteudo">
-        <h1>Descubra seu propósito</h1>
-        <p>Comece a conhecer a sua vocação. O teste é gratuito e você pode fazer quando quiser</p>
-        <a href="./teste.html"><button>Fazer o Teste</button></a>
-      </div>
+    <div class="popup">
+      <span>código da sala copiado</span>
     </div>
   </div>
+  <script>
+    const botao = document.querySelector('p > button')
+    const popup = document.querySelector('.popup')
+
+    botao.addEventListener('click', () => {
+      navigator.clipboard.writeText('JCMSJFQ')
+      popup.setAttribute('style', 'animation: 3s fade ease-in-out;')
+    })
+  </script>
   <script src="../src/libs/menu.js"></script>
-  <script src="../src/libs/candidato.js"></script>
 </body>
 </html>
