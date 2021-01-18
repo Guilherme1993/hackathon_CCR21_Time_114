@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ProPose - Inicio</title>
   <link rel="stylesheet" href="../src/assets/styles/global.css">
-  <link rel="stylesheet" href="../src/assets/styles/candidato/index.css">
+  <link rel="stylesheet" href="../src/assets/styles/admin/index.css"> 
   <link rel="shortcut icon" href="../src/assets/images/icon.svg">
   <script src="https://kit.fontawesome.com/8957e9a71b.js" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +19,6 @@
       <div class="submenu hide">
         <ul>
           <a href="./index.html"><li>Início</li></a>
-          <a href="./orientacao.html"><li>Orientação Vocacional</li></a>
           <a href="./perfil.html"><li>Perfil</li></a>
           <a href="../login.html"><li>Sair</li></a>
         </ul>
@@ -28,8 +27,8 @@
     <div class="right">
       <a href="./perfil.html">
         <div class="info">
-          <strong class="nome-usuario"></strong>
-          <span class="tipo-usuario"></span>
+          <strong class="nome-usuario">Usuário</strong>
+          <span class="tipo-usuario">admin</span>
         </div>
         <div class="img-perfil">
           <img src="../src/assets/images/perfil-icon-candidato.svg" class="foto">
@@ -38,35 +37,29 @@
     </div>
   </nav>
   <div class="content">
-    <div class="agendamento-devolutiva">
-      <div class="info-agendamento">
-        <h1 class="titulo-agendamento">Orientação Agendada: </h1>
-        <p>Em caso de indisponibilidade de horário envie e-mail para o responsável.</p>
-      </div>
+    <h1>Usuários</h1>
+    <div class="usuarios">
+      <div class="card-usuario">
+        <div class="perfil-usuario">
+          <img src="../src/assets/images/perfil-icon-admin.svg">
 
-      <div class="data-agendamento">
-        <h3 class="data"></h3>
-        <span class="hora"></span>
-      </div>
-
-      <div class="perfil-profissional">
-        <img src="../src/assets/images/perfil-icon-profissional.svg" alt="Carlos Roland">
-        <div class="contato-profissional">
-          <h1 class="avaliador"></h1>
-          <span class="email"></span>
+          <div class="info-usuario">
+            <h1 class="nome-usuario">Felipe Goulart</h1>
+            <span class="email-usuario">felipe@email.com</span>
+            
+            <div class="status-usuario">
+              <h3 class="tipo">Candidato</h3>
+              <div class="status">
+                <input type="checkbox" id="check-habilitado">
+                <label for="check-habilitado">Habilitado</label>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="box-teste-vocacional realizado">
-      <div class="conteudo">
-        <h1>Descubra seu propósito</h1>
-        <p>Comece a conhecer a sua vocação. O teste é gratuito e você pode fazer quando quiser</p>
-        <a href="./teste.html"><button>Fazer o Teste</button></a>
       </div>
     </div>
   </div>
   <script src="../src/libs/menu.js"></script>
-  <script src="../src/libs/candidato.js"></script>
+  <script src="../src/libs/admin.js"></script>
 </body>
 </html>

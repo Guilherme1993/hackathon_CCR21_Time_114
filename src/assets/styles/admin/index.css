@@ -1,0 +1,76 @@
+.content {
+  background-image: url('../../images/heroi-propose.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  background-position-x: 150px;
+
+  padding: 44px 16px;
+  justify-content: start;
+
+  position: relative;
+}
+
+.content > h1 {
+  margin: 40px 0;
+}
+
+.usuarios {
+  width: 100%;
+  height: 80%;
+
+  overflow-y: auto;
+}
+
+.card-usuario {
+  background-color: var(--bege-secundario);
+  width: 95%;
+  max-width: 100%;
+  max-height: 92px;
+  border-radius: 16px;
+  display: flex;
+  margin: 8px;
+
+  padding: 8px;
+}
+
+.perfil-usuario {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.perfil-usuario img{
+  width: 72px;
+}
+
+.perfil-usuario .info-usuario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-left: 8px;
+}
+
+.email-usuario {
+  font-size: .8rem;
+}
+
+.perfil-usuario .info-usuario h1{
+  font-size: 1.24rem;
+}
+
+.perfil-usuario .status-usuario {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.status-usuario > *{
+  margin: 4px 4px;
+  font-size: 1rem;
+}
