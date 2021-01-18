@@ -19,7 +19,7 @@ function cadastrarUsuario() {
 
             if (radioProfissional.checked) {
                 tipo = 1;
-                acesso = false;
+                acesso = true;
             }
 
             let candidato = {
@@ -48,6 +48,7 @@ function cadastrarUsuario() {
             arr.push(candidato);
             localStorage.setItem("usuarios", JSON.stringify(arr));
             alert('Cadastro efetuado com sucesso!')
+            window.location.href = 'http://127.0.0.1:5500/login.html';
             return true;
         } else {
             return false;

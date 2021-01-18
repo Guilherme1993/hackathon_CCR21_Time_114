@@ -37,11 +37,11 @@
     </section>
 
     <section class="area-cadastro">
-      <form onsubmit=" return cadastrarUsuario()" action="" class="cadastro">
-        <input type="text" placeholder="nome completo" class="nome">
-        <input type="email" placeholder="e-mail: exemplo@exemplo.com" class="email">
-        <input type="password" placeholder="senha:" class="senha">
-        <input type="password" placeholder="repita a senha" class="repete-senha">
+      <form autocomplete="off" action="" class="cadastro">
+        <input type="text" autocomplete="off" placeholder="nome completo" class="nome">
+        <input type="email" autocomplete="off" placeholder="e-mail: exemplo@exemplo.com" class="email">
+        <input type="password" autocomplete="off" placeholder="senha:" class="senha">
+        <input type="password" autocomplete="off" placeholder="repita a senha" class="repete-senha">
 
         <div class="inputs-radio">
           <input type="radio" name="tipo-cadastro" id="radio-candidato">
@@ -50,7 +50,7 @@
           <label for="radio-profissional">Profissional</label>
         </div>
 
-        <button type="submit" id="cadastrar">Cadastrar</button>
+        <button type="button" onclick="cadastrarUsuario()" id="cadastrar">Cadastrar</button>
         <a href="./login.html" id="sou-membro">Eu já sou um membro!</a>
       </form>
     </section>

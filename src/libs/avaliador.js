@@ -38,23 +38,25 @@ for (let candidato of arrayUsuarios) {
     }
 }
 
-elemAgendamento.innerHTML = arrayAgendamentos.map(({participante, emailParticipante, data, hora}) => `
-  <div class="card-agendamento">
-  <div class="perfil-candidato">
-    <img src="../src/assets/images/perfil-icon-profissional.svg">
-
-    <div class="info-candidato">
-      <h1 class="nome-candidato">${participante}</h1>
-      <span class="email-candidato">${emailParticipante}</span>
-      
-      <div class="data-agendamento">
-        <i class="far fa-calendar-minus"></i>
-        <h3 class="data">${formatarData(data)}</h3>
-        <span class="hora">${hora.replace(':', 'h')}min</span>
+if (arrayAgendamentos) {
+  elemAgendamento.innerHTML = arrayAgendamentos.map(({nomeParticipante, emailParticipante, data, hora}) => `
+    <div class="card-agendamento">
+    <div class="perfil-candidato">
+      <img src="../src/assets/images/perfil-icon-profissional.svg">
+  
+      <div class="info-candidato">
+        <h1 class="nome-candidato">${nomeParticipante}</h1>
+        <span class="email-candidato">${emailParticipante}</span>
+        
+        <div class="data-agendamento">
+          <i class="far fa-calendar-minus"></i>
+          <h3 class="data">${formatarData(data)}</h3>
+          <span class="hora">${hora.replace(':', 'h')}min</span>
+        </div>
       </div>
     </div>
-  </div>
-`).join('');
+  `).join('');
+}
 
 function agendar() {
 
